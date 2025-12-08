@@ -1,0 +1,11 @@
+.primary-title {
+    display: flex;
+    justify-content: center; // Aligns items horizontally to the left
+    align-items: center; // Centers items vertically for better alignment
+    gap: 20px; // Space between h1 elements
+    padding: 20px;
+}
+
+.primary-title-violet {
+    color: $font-sec;
+}

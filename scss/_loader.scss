@@ -1,0 +1,93 @@
+/* LOADER */
+
+.c-loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    pointer-events: none;
+    color: #fff;
+}
+
+.c-loader_bg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--accent-color);
+    pointer-events: all;
+    transition: 0.2s;
+    transition-delay: 0.6s;
+}
+
+.c-loader.is-loaded .c-loader_bg {
+    height: 0 !important;
+}
+
+.c-loader.is-loaded .c-loader_text {
+    opacity: 0;
+}
+
+.c-loader.is-loaded .c-loader_circle {
+    opacity: 0;
+}
+
+.c-l-up,
+.c-m-up {
+    overflow: hidden;
+    display: block;
+}
+
+.c-l-up span,
+.c-m-up span {
+    transition: 0.2s;
+    transition-delay: 0;
+    display: block;
+    transform: translate(0, 0);
+    color: #fff;
+    font-size: inherit;
+    font-family: circula;
+}
+
+.c-loader.is-loaded .c-l-up span {
+    transform: translate(0, -100%) !important;
+}
+
+.c-loader_text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    transition: 0.2s;
+    transition-delay: 0.5s;
+}
+
+.c-loader_text h2 > div span {
+    animation: bring-up 0.8s linear;
+}
+
+.c-loader_text > h4 {
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: ttnorms;
+}
+
+.c-loader_circle {
+    position: absolute;
+    bottom: 15%;
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-left: 4px solid #fff;
+    border-radius: 100px;
+    animation: loader-rotate 1s linear infinite;
+    transition: 0.4s;
+    transition-delay: 0.2s;
+}

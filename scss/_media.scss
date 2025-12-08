@@ -1,0 +1,161 @@
+/* MEDIA QUERIES */
+
+@import "variables";
+
+
+// Small screen
+// ============================================================
+@media screen and (max-width: $small-screen) {
+
+    // Fonts
+    h1 {
+        font-size: $font-size-h1-s;
+    }
+
+    h2 {
+        font-size: $font-size-h2-s;
+    }
+
+    p {
+        font-size: $font-size-p-s;
+    }
+
+    .block-1 {
+
+        img {
+            width: 190px!important;
+            height: 190px!important;
+        }
+    }
+
+    .block-2 {
+        .text-horizontal {
+            transform: translate(0%, 0%);
+            margin-bottom: 50px;
+        }
+
+        .container {
+            flex-direction: column; /* Stacks elements vertically: image on top, text below */
+        }
+
+        .violet-button {
+            width: 80px;  // Reduce size to maintain circle
+            height: 80px;
+            font-size: 14px;  // Smaller font for better fit
+        }
+    }
+
+    .block-3 {
+        .container {
+            transform: translate(0%, 100%);
+        }
+
+        .obras-carousel {
+            margin-top: 100px;
+        }
+
+    }
+
+    .block-4 {
+        .container {
+            flex-direction: column; /* Stacks elements vertically: image on top, text below */
+        }
+    }
+
+    .block-paintings {
+        .container {
+            flex-direction: column; /* Stacks elements vertically: image on top, text below */
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 500px) {
+            .block-1 {
+                -webkit-animation: animatedBackground 25s linear infinite alternate;
+                animation: animatedBackground 25s linear infinite alternate;
+            }
+}
+
+// Extra small screen
+// ============================================================
+@media screen and (max-width: $xsmall-screen) {
+
+    // Fonts
+  
+    h1 {
+        font-size: $font-size-h1-xs;
+    }
+
+    h2 {
+        font-size: $font-size-h2-xs;
+    }
+
+    .block-1 {
+        h1 {
+            font-size: 4em!important;
+        }
+    }
+
+    .block-2 {
+        .violet-button {
+            width: 80px!important;
+            height: 80px!important;
+            font-size: 14px!important;
+        }
+    }
+
+}
+
+
+// Extra Extra small screen
+// ============================================================
+@media screen and (max-width: $xxsmall-screen) {
+
+}
+
+
+// Medium screen
+// ============================================================
+@media (min-width: $medium-screen) {
+
+}
+
+// Large screen
+// ============================================================
+@media screen and (min-width: $large-screen) {
+
+    // Fonts
+    h1 {
+        font-size: $font-size-h1-l;
+    }
+
+    .block-1 {
+
+        img {
+            width: 280px!important;
+            height: 280px!important;
+        }
+    }
+
+
+}
+
+// Extra Large screen
+// ============================================================
+@media screen and (min-width: $xlarge-screen) {
+
+    // Fonts
+    h1 {
+        font-size: $font-size-h1-xl;
+    }
+
+    .block-1 {
+
+        img {
+            width: 320px!important;
+            height: 320px!important;
+        }
+    }
+}
