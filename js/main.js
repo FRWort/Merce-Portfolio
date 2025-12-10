@@ -24,6 +24,8 @@ $(".menu").click(function(){
 
 $(document).ready(function () {
 
+  scroll.update(); // Fix for last section getting cutted
+
   /* IMAGE VIEWER */
   // Fixed selector: Combine with comma inside the string
   $(".gallery img").click(function () {
