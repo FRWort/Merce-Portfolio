@@ -1,6 +1,6 @@
 /* NAV BAR */
 
-@import "variables";
+@use "variables" as *;
 
 $m: rgb(34,34,34);
 $icon-background: $color-pri;

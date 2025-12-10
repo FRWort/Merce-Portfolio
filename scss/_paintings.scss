@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .block-paintings {
     .reveal {
         &.is-inview {

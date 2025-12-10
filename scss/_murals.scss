@@ -1,5 +1,8 @@
 /******************* MURALS SCSS STYLE START ********************/
 // Block-specific styles
+
+@use "variables" as *;
+
 .block-murals {
 
     .reveal {

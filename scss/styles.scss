@@ -1,23 +1,21 @@
-@import "base";
+@use "base";
 
-@import "loader";
+@use "loader";
 
-@import "variables";
+@use "variables";
 
-@import "fonts";
+@use "fonts";
 
-@import "anims";
+@use "anims";
 
-@import "navbar";
+@use "navbar";
 
-@import "elements";
+@use "elements";
 
-@import "homepage";
+@use "homepage";
 
-@import "paintings";
+@use "paintings";
 
-@import "murals";
+@use "murals";
 
-@import "footer";
-
-@import "media";
+@use "media";
