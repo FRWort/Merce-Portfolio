@@ -22,6 +22,10 @@
 
     .block-1 {
 
+        // For background animation
+        -webkit-animation: animatedBackground 25s linear infinite alternate;
+        animation: animatedBackground 25s linear infinite alternate;
+
         img {
             width: 190px!important;
             height: 190px!important;
@@ -34,15 +38,15 @@
             margin-bottom: 50px;
         }
 
-        .container {
-            flex-direction: column; /* Stacks elements vertically: image on top, text below */
+        .reveal {
+            margin: 50px 0;
+
+            .container {
+                    flex-direction: column;
+                    /* Stacks elements vertically: image on top, text below */
+                }
         }
 
-        .violet-button {
-            width: 80px;  // Reduce size to maintain circle
-            height: 80px;
-            font-size: 14px;  // Smaller font for better fit
-        }
     }
 
     .block-3 {
@@ -58,7 +62,64 @@
 
     .block-4 {
         .container {
-            flex-direction: column; /* Stacks elements vertically: image on top, text below */
+                grid-template-columns: 1fr;
+                /* Single column for stacking */
+                grid-template-rows: auto auto auto;
+                /* Three rows: title, paints, button */
+            }
+        
+            .title {
+                grid-column: 1;
+                grid-row: 1;
+                padding-right: 0;
+                /* Remove right padding on small screens */
+            }
+        
+            .button-wrapper {
+                grid-column: 1;
+                grid-row: 3;
+                /* Move to third row, after paints */
+            }
+        
+            .paints {
+                grid-column: 1;
+                grid-row: 2;
+                /* Move to second row, after title */
+            }
+
+            // Disable hover effects on small screens
+            .paints img:hover {
+                opacity: 1;
+                /* Reset to default opacity */
+                transform: none;
+                /* Remove scale transform */
+                cursor: default;
+                /* Change cursor to default */
+            }
+
+    }
+
+    .block-5 {
+        flex-direction: column; // Stack vertically
+        align-items: center; // Center items
+        gap: 30px; // Smaller gap on mobile
+
+        .speech-bubble {
+            .bubble-content {
+                flex-direction: column; // Stack vertically
+                align-items: center; // Center items
+                text-align: center; // Center text
+
+                .profile-pic {
+                    margin-bottom: 20px; // Space below image
+                }
+
+                .text-content {
+                    .buttons {
+                        justify-content: center; // Center buttons horizontally
+                    }
+                }
+            }
         }
     }
 
@@ -68,15 +129,8 @@
         }
     }
 
-
 }
 
-@media screen and (min-width: 500px) {
-            .block-1 {
-                -webkit-animation: animatedBackground 25s linear infinite alternate;
-                animation: animatedBackground 25s linear infinite alternate;
-            }
-}
 
 // Extra small screen
 // ============================================================
@@ -93,16 +147,38 @@
     }
 
     .block-1 {
+
+        // For background animation
+        -webkit-animation: animatedBackground 35s linear infinite alternate;
+        animation: animatedBackground 35s linear infinite alternate;
+
         h1 {
             font-size: 4em!important;
         }
     }
 
     .block-2 {
-        .violet-button {
-            width: 80px!important;
-            height: 80px!important;
-            font-size: 14px!important;
+
+        .container {
+            margin: 20px!important;
+
+            .signature svg {
+                width: 250px !important;
+                height: auto;   
+            }
+
+            .violet-button {
+                width: 80px!important;
+                height: 80px!important;
+                font-size: 14px!important;
+            }
+        }
+    }
+
+    .block-4 {
+
+        .container {
+            margin: 0 20px !important;
         }
     }
 
@@ -120,6 +196,50 @@
 // ============================================================
 @media (min-width: $medium-screen) {
 
+    // Fonts
+    h1 {
+        font-size: $font-size-h1-m;
+    }
+
+    p {
+        font-size: $font-size-p-m;
+    }
+
+    .block-2 {
+
+        .container {
+
+            .signature svg {
+                width: 500px !important;
+                height: auto;   
+            }
+
+            .violet-button {
+                width: 100px!important;
+                height: 100px!important;
+                font-size: 16px!important;
+            }
+        }
+    }
+
+    .block-3 {
+        .button-wrapper {
+            .murals-button {
+                width: 11em;
+                height: 4em;
+                border-radius: 35px;
+            }
+        }
+    }
+
+    .block-4 {
+        .paintings-button {
+            border-radius: 30px;
+            width: 13em;
+            height: 4em;
+        }
+    }
+
 }
 
 // Large screen
@@ -131,6 +251,10 @@
         font-size: $font-size-h1-l;
     }
 
+    p {
+        font-size: $font-size-p-l;
+    }
+
     .block-1 {
 
         img {
@@ -139,6 +263,40 @@
         }
     }
 
+    .block-2 {
+
+        .container {
+
+            .signature svg {
+                width: 600px !important;
+                height: auto;   
+            }
+
+            .violet-button {
+                width: 120px!important;
+                height: 120px!important;
+                font-size: 20px!important;
+            }
+        }
+    }
+
+    .block-3 {
+        .button-wrapper {
+            .murals-button {
+                width: 13em;
+                height: 5em;
+                border-radius: 40px;
+            }
+        }
+    }
+
+    .block-4 {
+        .paintings-button {
+            border-radius: 35px;
+            width: 15em;
+            height: 5em;
+        }
+    }
 
 }
 
@@ -151,11 +309,50 @@
         font-size: $font-size-h1-xl;
     }
 
+    p {
+        font-size: $font-size-p-xl;
+    }
+
     .block-1 {
 
         img {
             width: 320px!important;
             height: 320px!important;
+        }
+    }
+
+    .block-2 {
+
+        .container {
+
+            .signature svg {
+                width: 800px !important;
+                height: auto;   
+            }
+
+            .violet-button {
+                width: 150px!important;
+                height: 150px!important;
+                font-size: 28px!important;
+            }
+        }
+    }
+
+    .block-3 {
+        .button-wrapper {
+            .murals-button {
+                width: 15em;
+                height: 6em;
+                border-radius: 45px;
+            }
+        }
+    }
+
+    .block-4 {
+        .paintings-button {
+            border-radius: 45px;
+            width: 17em;
+            height: 7em;
         }
     }
 }

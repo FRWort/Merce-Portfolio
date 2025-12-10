@@ -1,0 +1,761 @@
+/* SITE BLOCKS */
+
+@import "variables";
+
+/******************* INDEX CSS STYLE START ********************/
+.block-1 {
+    height: 100vh;
+    background-image: linear-gradient(60deg, rgba(75, 0, 107, 0.2) 0%, rgba(13, 0, 26, 0.8) 100%),
+        url(../assets/home-bg.webp);
+    // Define the mask-image property with a linear gradient
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    // Include the -webkit- prefix for broader browser compatibility
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    // For background animation
+    -webkit-animation: animatedBackground 20s linear infinite alternate;
+    animation: animatedBackground 20s linear infinite alternate;
+
+    /*
+    .waves {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 15vh;
+        margin-bottom: -7px; /*Fix for safari gap
+        min-height: 100px;
+        max-height: 150px;
+    }*/
+
+    .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner_design {
+        position: absolute;
+        white-space: nowrap;
+
+        .image {
+            // Shitty locomotive matrix3d solution - (not positioning correctly on reload when two child divs are relative to each other)
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -80%);
+            filter: brightness(0) invert(1);
+
+            img {
+                width: 230px;
+                height: 230px;
+            }
+        }
+
+        .text {
+            transform: translate(0%, 50%);
+            will-change: transform;
+            text-align: center;
+
+            h3 {
+                display: inline-block;
+            }
+        }
+
+    }
+
+}
+
+.block-2 {
+    margin-top: 20px;
+    overflow: visible;
+
+    .text-horizontal {
+            transform: translate(0%, 30%);
+            will-change: transform;
+            font-size: 1.5em;
+            text-align: center;
+            opacity: 1;
+    
+            .outline h2 {
+                -webkit-text-stroke: 0.03em $font-sec;
+                /*#4bbfda*/
+                /*text-stroke: 1px #000;*/
+                color: transparent;
+            }
+        }
+    
+    .reveal {
+        &.is-inview {
+            opacity: 0;
+            animation: fade-in-right ease 2s forwards;
+        }
+
+        display: flex; /* Makes the container a flex container */
+        justify-content: center; /* Centers items horizontally */
+        align-items: center; /* Centers items vertically */
+        margin: 150px 0;
+
+        .container { 
+            display: flex;
+            background-color: rgb(35, 35, 35);
+            margin: 0 50px;
+            /* Adding a box shadow */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .image-half, .text-half {
+            flex: 1; /* Each takes 50% of the container width */
+        }
+
+        .image-half img {
+            width: 100%;
+            height: auto; /* Maintains aspect ratio */
+        }
+
+        .text-half {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column for stacking */
+            grid-template-rows: auto auto auto; /* Three rows: text, signature, button */
+            gap: 20px; /* Space between grid items */
+        }
+
+        .text-half p {
+            grid-column: 1;
+            grid-row: 1; /* Text in first row */
+            margin: 30px; /* Remove default margin */
+            color: #fff;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            text-align: left; /* Left-align text */
+        }
+
+        /* SIGNATURE START - MADE WITH VIVUS INSTANT https://maxwellito.github.io/vivus-instant/*/
+        .signature {
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                width: 350px;
+                height: auto;
+            }
+
+            &.is-inview {
+                .qdHWNwoi_0 {
+                        stroke-dasharray: 291 293;
+                        stroke-dashoffset: 292;
+                        animation: qdHWNwoi_draw 248ms linear 0ms forwards;
+                    }
+                
+                    .qdHWNwoi_1 {
+                        stroke-dasharray: 184 186;
+                        stroke-dashoffset: 185;
+                        animation: qdHWNwoi_draw 157ms linear 248ms forwards;
+                    }
+                
+                    .qdHWNwoi_2 {
+                        stroke-dasharray: 210 212;
+                        stroke-dashoffset: 211;
+                        animation: qdHWNwoi_draw 179ms linear 405ms forwards;
+                    }
+                
+                    .qdHWNwoi_3 {
+                        stroke-dasharray: 389 391;
+                        stroke-dashoffset: 390;
+                        animation: qdHWNwoi_draw 331ms linear 585ms forwards;
+                    }
+                
+                    .qdHWNwoi_4 {
+                        stroke-dasharray: 83 85;
+                        stroke-dashoffset: 84;
+                        animation: qdHWNwoi_draw 71ms linear 916ms forwards;
+                    }
+                
+                    .qdHWNwoi_5 {
+                        stroke-dasharray: 121 123;
+                        stroke-dashoffset: 122;
+                        animation: qdHWNwoi_draw 103ms linear 988ms forwards;
+                    }
+                
+                    .qdHWNwoi_6 {
+                        stroke-dasharray: 83 85;
+                        stroke-dashoffset: 84;
+                        animation: qdHWNwoi_draw 71ms linear 1091ms forwards;
+                    }
+                
+                    .qdHWNwoi_7 {
+                        stroke-dasharray: 92 94;
+                        stroke-dashoffset: 93;
+                        animation: qdHWNwoi_draw 79ms linear 1163ms forwards;
+                    }
+                
+                    .qdHWNwoi_8 {
+                        stroke-dasharray: 95 97;
+                        stroke-dashoffset: 96;
+                        animation: qdHWNwoi_draw 81ms linear 1242ms forwards;
+                    }
+                
+                    .qdHWNwoi_9 {
+                        stroke-dasharray: 206 208;
+                        stroke-dashoffset: 207;
+                        animation: qdHWNwoi_draw 176ms linear 1323ms forwards;
+                    }
+                
+                    @keyframes qdHWNwoi_draw {
+                        100% {
+                            stroke-dashoffset: 0;
+                        }
+                    }
+                
+                    @keyframes qdHWNwoi_fade {
+                        0% {
+                            stroke-opacity: 1;
+                        }
+                
+                        92.98245614035088% {
+                            stroke-opacity: 1;
+                        }
+                
+                        100% {
+                            stroke-opacity: 0;
+                        }
+                    }
+            }
+        }
+
+        /* SIGNATURE END - MADE WITH VIVUS INSTANT https://maxwellito.github.io/vivus-instant/ */
+
+        .button-wrapper {
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .violet-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(166, 22, 255);
+                /* Or use a specific shade like #8A2BE2 for deeper violet */
+                color: white;
+                /* Text color for contrast */
+                border: none;
+                border-radius: 50%;
+                /* Makes it circular */
+                width: 100px;
+                /* Adjust size as needed */
+                height: 100px;
+                /* Same as width for perfect circle */
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                /* Subtle shadow */
+                transition: all 0.3s ease;
+                /* Smooth hover transition */
+            }
+
+            .violet-button:hover {
+                background-color: #7A1FA2;
+                /* Darker violet on hover */
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+                /* Deeper shadow on hover */
+                transform: scale(1.05);
+                /* Slight enlargement for effect */
+            }
+
+            .fa-whatsapp {
+                text-align: center;
+                font-size: 3em;
+                color: $font-pri-w;
+            }
+        }
+    }
+}
+
+.block-3 {
+    height: auto;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .violet {
+            display: flex;
+                justify-content: center;
+                align-items: center;
+        
+            h1 {
+            color: $font-sec;
+            }
+        }
+    }
+
+        .obras-carousel {
+            position: relative;
+            margin: 30px;
+    
+            h2 {
+                font-size: 35px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+    
+            .owl-stage-outer {
+                padding: 30px 0;
+                overflow: visible;
+            }
+    
+            .owl-nav {
+                display: none;
+            }
+    
+            .owl-dots {
+                margin-top: 3em;
+                text-align: center;
+    
+                span {
+                    position: relative;
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    display: block;
+                    background: rgb(166, 22, 255);
+                    border: 2px solid rgb(166, 22, 255);
+                    margin: 0 5px;
+                }
+    
+                .active {
+                    box-shadow: none;
+                    transform: scale(1.5);
+    
+                    span {
+                        background: rgb(166, 22, 255);
+                        box-shadow: rgb(187, 78, 255);
+                        height: 12px;
+                        width: 12px;
+                        margin-bottom: -1px;
+                    }
+                }
+            }
+    
+            .card {
+                text-align: center;
+                background: #fff;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin: 0 20px;
+                border: 0;
+                height: 300px;
+                width: auto;
+
+                // Added to make images occupy 100% of the card
+                img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; // Maintains aspect ratio and covers the entire area       
+                }
+
+                .text {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 10px;
+
+                    p {
+                        color: $font-pri-w;
+                    }
+                }
+            }
+
+            .owl-carousel .owl-item {
+                opacity: 0.5;
+                /* Default for all items */
+                transition: opacity 0.3s ease-in-out;
+                /* Smooth transition */
+            }
+
+            .center {
+                transform: scale(1.05);
+                opacity: 1!important;
+            }
+        }
+    
+        .owl-carousel {
+            .owl-nav button {
+
+                &.owl-next,
+                &.owl-prev {
+                    outline: 0;
+                }
+            }
+    
+            button.owl-dot {
+                outline: 0;
+            }
+        }
+
+        .button-wrapper {
+            margin: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .murals-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(166, 22, 255);
+                color: white;
+                border: none;
+                border-radius: 30px;
+                width: 9em;
+                height: 4em;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                transition: all 0.3s ease;
+            }
+
+            .murals-button:hover {
+                background-color: #7A1FA2;
+                /* Darker violet on hover */
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+                /* Deeper shadow on hover */
+                transform: scale(1.05);
+                /* Slight enlargement for effect */
+            }
+
+            p {
+                color: $font-pri-w;
+            }
+        }
+
+}
+
+.block-4 {
+    height: auto;
+    margin-top: 100px;
+
+    .container {
+        background-color: rgb(35, 35, 35);
+        display: grid;
+        /* Change to grid layout */
+        grid-template-columns: 1fr 1fr;
+        /* Two columns: title/button on left, paints on right */
+        grid-template-rows: auto auto;
+        /* Two rows: first for title, second for button */
+        margin: 0 50px;
+        padding: 1.2em;
+        gap: 1em;
+        /* Optional: Add some gap between grid items for spacing */
+    }
+
+    .title {
+        grid-column: 1;
+        /* Place in first column */
+        grid-row: 1;
+        /* Place in first row */
+        padding-right: 2em;
+        padding-bottom: 0;
+        /* Remove bottom padding since button is now separate */
+    }
+
+    .button-wrapper {
+        grid-column: 1;
+        /* Place in first column */
+        grid-row: 2;
+        /* Place in second row, directly under title */
+        margin: 2em 0;
+        /* Adjust margin as needed, removed horizontal since it's now in grid */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paints {
+        grid-column: 2;
+        /* Place in second column */
+        grid-row: 1 / span 2;
+        /* Span both rows to take full height next to title/button */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .violet {
+        h1 {
+            -webkit-text-stroke: 0.03em $font-sec;
+            color: transparent;
+            text-decoration: underline;
+            text-decoration-thickness: 5px;
+            text-underline-offset: 20px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .paintings-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(166, 22, 255);
+        color: white;
+        border: none;
+        border-radius: 25px;
+        width: 12em;
+        height: 3em;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+    }
+
+    .paintings-button:hover {
+        background-color: #7A1FA2;
+        /* Darker violet on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        /* Deeper shadow on hover */
+        transform: scale(1.05);
+        /* Slight enlargement for effect */
+    }
+
+    p {
+        padding: 30px 0;
+        color: $font-pri-w;
+    }
+
+    .paints img {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 100%;
+        height: 100%;
+        /* Maintains aspect ratio */
+    }
+
+    .paints img:hover {
+        opacity: 0.5;
+        transition: all 0.3s;
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    .hover-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        pointer-events: none;
+        /* So it doesn't interfere with clicks */
+    }
+
+    .paints img:active {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+
+}
+
+.block-5 {
+    display: flex;
+    justify-content: center; // Centers the bubble and heart as a group
+    align-items: center;
+    height: auto; // Adjust height as needed; full viewport if desired
+    padding: 50px 20px; // Padding for spacing
+    gap: 50px; // Gap between bubble and heart
+
+    .reveal {
+        &.is-inview {
+            opacity: 0;
+            animation: fade-in-right ease 2s forwards;
+        }
+    }
+
+    .speech-bubble {
+        background-color: rgb(35, 35, 35);
+        border-radius: 20px; // Rounded corners for bubble effect
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Subtle shadow
+        padding: 30px;
+        max-width: 600px; // Limit width for readability
+        width: 100%;
+        position: relative;
+
+        .bubble-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px; // Space between image and text
+
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%; // Circular
+                object-fit: cover; // Ensures image fits without distortion
+                border: 3px solid #fff; // Optional white border for contrast
+            }
+
+            .text-content {
+                flex: 1;
+
+                h3 {
+                    color: #fff;
+                    font-size: 1.5em;
+                    margin: 0 0 10px 0;
+                }
+
+                p {
+                    color: #ccc; // Lighter text for contrast
+                    margin: 0 0 20px 0;
+                    line-height: 1.5;
+                }
+
+                .buttons {
+                    display: flex;
+                    gap: 15px; // Space between buttons
+
+                    .whatsapp-btn {
+                        background-color: rgb(166, 22, 255); // Violet
+                        color: white;
+                        border: none;
+                        border-radius: 50%; // Circular
+                        width: 50px;
+                        height: 50px;
+                        font-size: 1.5em; // Icon size
+                        cursor: pointer;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); // Subtle shadow
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            background-color: #7A1FA2; // Darker violet on hover
+                            transform: scale(1.1);
+                        }
+
+                        i {
+                            color: white; // Ensure icon is white
+                        }
+                    }
+
+                    .instagram-btn {
+                        background-color: rgb(166, 22, 255); // Violet
+                        color: white;
+                        border: none;
+                        border-radius: 50%; // Circular
+                        width: 50px;
+                        height: 50px;
+                        font-size: 1.5em; // Icon size
+                        cursor: pointer;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); // Subtle shadow
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            background-color: #7A1FA2; // Darker violet on hover
+                            transform: scale(1.1);
+                        }
+
+                        i {
+                            color: white; // Ensure icon is white
+                        }
+                    }
+
+                    .mail-btn {
+                        background-color: rgb(166, 22, 255); // Violet
+                        color: white;
+                        border: none;
+                        border-radius: 50%; // Circular
+                        width: 50px;
+                        height: 50px;
+                        font-size: 1.5em; // Icon size
+                        cursor: pointer;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); // Subtle shadow
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            background-color: #7A1FA2; // Darker violet on hover
+                            transform: scale(1.1);
+                        }
+
+                        i {
+                            color: white; // Ensure icon is white
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    // Heart styles
+    #heart {
+        display: inline-block;
+        text-align: center;
+        transition: transform 0.3s ease; // Smooth transition for hover
+        animation: heart-beat 1.5s infinite; // Endless loop animation on hover
+    
+        ul {
+            list-style: none;
+            display: inline-block;
+        }
+    
+        ul li {
+            width: 25px;
+            height: 25px;
+            margin: 8px 0;
+        }
+    
+        ul li.one {
+            background: #0080FF;
+        }
+    
+        ul li.two {
+            background: #0EA7A5;
+        }
+    
+        ul li.three {
+            background: #50C878;
+        }
+    
+        ul li.four {
+            background: #FFD700;
+        }
+    
+        ul li.five {
+            background: #FA7A35;
+        }
+    
+        ul li.six {
+            background: #E24666;
+        }
+    
+        ul li.seven {
+            background: #B53389;
+        }
+    
+        ul li.eight {
+            background: #941369;
+        }
+    
+        ul li.nine {
+            background: #ef009f;
+        }
+    }
+
+}
+
+
+.block-6 {
+    height: 500px;
+    padding: 50px; // Changed from margin to padding to avoid overflow
+}
+/******************* INDEX CSS STYLE END ********************/

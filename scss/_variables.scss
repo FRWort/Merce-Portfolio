@@ -8,12 +8,12 @@ $font-pri-w:          #fff;
 $font-sec:            rgb(182, 66, 255);
 
 $color-pri:           #370063;
-// Base
-$font-size:             1.2em   !default;
+
 // Headings
 $font-size-h1:          5em   !default;
-$font-size-h1-s:        ($font-size-h1 - 1em);
 $font-size-h1-xs:       ($font-size-h1 - 2em);
+$font-size-h1-s:        ($font-size-h1 - 1em);
+$font-size-h1-m:        ($font-size-h1 + 0.5em);
 $font-size-h1-l:        ($font-size-h1 + 1em);
 $font-size-h1-xl:       ($font-size-h1 + 2em);
 
@@ -23,13 +23,19 @@ $font-size-h2-xs:       ($font-size-h2 - 1em);
 $font-size-h2-l:        ($font-size-h2 + 1em);
 $font-size-h2-xl:       ($font-size-h2 + 2em);
 
+// Paragraph base
+$font-size:             1.2em   !default;
+$font-size-p-xs:        (0.7em);
 $font-size-p-s:         (1em);
+$font-size-p-m:         (1.5em);
+$font-size-p-l:         (1.8em);
+$font-size-p-xl:        (2.2em);
 
 // Breakpoints
 // =============================================================================
-$xxsmall-screen:        420px;
+$xxsmall-screen:        300px;
 $xsmall-screen:         600px;
-$small-screen:          900px;
-$medium-screen:         1000px;
+$small-screen:          1080px;
+$medium-screen:         1400px;
 $large-screen:          1920px;
 $xlarge-screen:         2400px;

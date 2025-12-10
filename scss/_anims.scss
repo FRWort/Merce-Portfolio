@@ -84,3 +84,13 @@
     transform: scale(1);
   }
 }
+
+// Keyframe for the heart-beat animation
+@keyframes heart-beat {
+    0%, 100% {
+        transform: scale(0.9); // Normal size
+    }
+    50% {
+        transform: scale(1.1); // Slightly larger for "beating" effect
+    }
+}

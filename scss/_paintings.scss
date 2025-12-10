@@ -1,58 +1,56 @@
 .block-paintings {
-
     .reveal {
-
         &.is-inview {
             opacity: 0;
             animation: fade-in-right 2s ease forwards;
         }
 
-                .container {
-                    margin: 2em;
-                    background-color: rgb(35, 35, 35);
-                    height: auto;
-                    display: flex;
-                    padding: 3em;
-                }
-        
-                .title {
-                    padding-right: 2em;
-                    padding-bottom: 3em;
-                }
-        
-                .title,
-                .painting {
-                    flex: 1;
-                    /* Each takes 50% of the container width */
-                }
-        
-                .violet {
-                    h1 {
-                        -webkit-text-stroke: 0.03em $font-sec;
-                        color: transparent;
-                        text-decoration: underline;
-                        text-decoration-thickness: 5px;
-                        text-underline-offset: 20px;
-                        margin-bottom: 30px;
-                    }
-                }
+        .container {
+            margin: 2em;
+            background-color: rgb(35, 35, 35);
+            height: auto;
+            display: flex;
+            padding: 1.5em;
+        }
 
-                .painting {
-                    display: flex; /* Added to make it a flex container */
-                    justify-content: center; /* Centers the image horizontally */
-                    align-items: center; /* Optional: Centers vertically if needed, but image has fixed height */
-                }
-        
-                .painting img {
-                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                    width: 100%;
-                    height: 100%;
-                    /* Maintains aspect ratio */
-                }
+        .title {
+            padding-right: 2em;
+            padding-bottom: 3em;
+        }
 
-                span {
-                    opacity: 0.5;
-                }
+        .title,
+        .painting {
+            flex: 1;
+            /* Each takes 50% of the container width */
+        }
+
+        .violet {
+            h1 {
+                -webkit-text-stroke: 0.03em $font-sec;
+                color: transparent;
+                text-decoration: underline;
+                text-decoration-thickness: 5px;
+                text-underline-offset: 20px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .painting {
+            display: flex; /* Added to make it a flex container */
+            justify-content: center; /* Centers the image horizontally */
+            align-items: center; /* Optional: Centers vertically if needed, but image has fixed height */
+        }
+
+        .painting img {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            width: 100%;
+            height: 100%;
+            /* Maintains aspect ratio */
+        }
+
+        span {
+            opacity: 0.5;
+        }
 
     }
 
