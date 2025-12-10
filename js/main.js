@@ -111,10 +111,27 @@ document.querySelector('.violet-button').addEventListener('click', function () {
   window.location.href = 'https://api.whatsapp.com/send?phone=5492645455759&text=%F0%9F%96%90%EF%B8%8F%20Hola!%20Te%20hablo%20a%20trav%C3%A9s%20de%20tu%20website!%20Tengo%20una%20consulta';
 });
 
+document.querySelector('#social1').addEventListener('click', function () {
+  window.location.href = 'https://api.whatsapp.com/send?phone=5492645455759&text=%F0%9F%96%90%EF%B8%8F%20Hola!%20Te%20hablo%20a%20trav%C3%A9s%20de%20tu%20website!%20Tengo%20una%20consulta';
+});
+
+document.querySelector('#social2').addEventListener('click', function () {
+  window.location.href = 'https://www.instagram.com/merceyacante';
+});
+
+document.querySelector('#social3').addEventListener('click', function () {
+  window.location.href = 'https://www.facebook.com/merceyacante';
+});
+
+document.querySelector('#social4').addEventListener('click', function () {
+  window.location.href = 'https://www.tiktok.com/@merceyacante';
+});
+
 document.querySelector('.murals-button').addEventListener('click', function () {
   window.location.href = 'murales.html';
 });
 
+// Only for desktop
 if (window.matchMedia('(min-width: 1080px)').matches) {
   document.querySelector('.paints').addEventListener('click', function () {
     window.location.href = 'pinturas.html';
