@@ -21,6 +21,40 @@
         .title {
             padding-right: 2em;
             padding-bottom: 3em;
+            display: flex; /* Makes .title a flex container */
+            flex-direction: column; /* Stacks text-content and button vertically */
+
+            .text-content {
+                flex-shrink: 0; /* Prevents text from shrinking, keeps it at the top */
+                padding-bottom: 1.5em;
+            }
+
+            .btn-inquire {
+                margin-top: auto; /* Pushes button to the bottom of .title */
+                padding: 0.75em 1.5em;
+                background-color: $font-sec; // Uses your secondary font color (assuming it's violet/purple)
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 1em;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: darken($font-sec, 10%); // Darkens on hover for interaction
+                }
+
+                // Styles for sold-out buttons
+                &.soldout {
+                    pointer-events: none; // Makes the button non-clickable
+                    background-color: grey; // Changes background to grey
+                    color: #333; // Dark text for contrast on grey background
+                    cursor: not-allowed; // Optional: Changes cursor to indicate it's disabled
+                    &:hover {
+                        background-color: grey; // Removes hover effect for sold-out state
+                    }
+                }
+            }
         }
 
         .title,

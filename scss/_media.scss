@@ -127,6 +127,10 @@
         .container {
             flex-direction: column; /* Stacks elements vertically: image on top, text below */
         }
+
+        .title .btn-inquire {
+            width: 100%; // Makes button full-width on mobile for better usability
+        }
     }
 
 }
