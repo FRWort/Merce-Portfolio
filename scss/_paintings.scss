@@ -54,6 +54,10 @@
                         background-color: grey; // Removes hover effect for sold-out state
                     }
                 }
+
+                &:active {
+                    transform: scale(0.98);
+                }
             }
         }
 
