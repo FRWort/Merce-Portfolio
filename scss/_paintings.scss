@@ -1,6 +1,9 @@
 @use "variables" as *;
 
 .block-paintings {
+    height: auto;
+    padding-bottom: 50px;
+
     .reveal {
         &.is-inview {
             opacity: 0;
