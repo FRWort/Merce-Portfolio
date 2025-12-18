@@ -16,7 +16,6 @@ const scroll = new LocomotiveScroll ({
     },
 });
 
-
 $(".menu").click(function(){
   $(this).parent().toggleClass("close");
 });
@@ -74,6 +73,14 @@ $(document).ready(function () {
   });
   /* VER CATALOGO END */
 
+});
+
+// Paint Buttons - Use data attributes for DRY principle
+document.querySelectorAll('.btn-inquire').forEach(button => {
+  button.addEventListener('click', function() {
+    const url = this.dataset.url || 'https://api.whatsapp.com/send?phone=5492645455759&text=%F0%9F%96%90%EF%B8%8F%20Hola!%20Te%20hablo%20a%20trav%C3%A9s%20de%20tu%20website!%20Tengo%20una%20consulta'; // Fallback to placeholder
+    window.location.href = url;
+  });
 });
 
 (function () {
@@ -141,3 +148,4 @@ if (window.matchMedia('(min-width: 1080px)').matches) {
 document.querySelector('.paintings-button').addEventListener('click', function () {
   window.location.href = 'pinturas.html';
 });
+
