@@ -16,9 +16,11 @@ const scroll = new LocomotiveScroll ({
     },
 });
 
-$(".menu").click(function(){
-  $(this).parent().toggleClass("close");
+// Navbar button
+$(".fixed-navbar-button").click(function(){
+  window.location.href = '../index.html';
 });
+
 // ---------------------------------------------------------
 
 $(document).ready(function () {
@@ -83,6 +85,7 @@ document.querySelectorAll('.btn-inquire').forEach(button => {
   });
 });
 
+
 (function () {
   "use strict";
 
@@ -111,6 +114,7 @@ document.querySelectorAll('.btn-inquire').forEach(button => {
     carousels();
   })(jQuery);
 })();
+
 
 /* BUTTONS */
 
@@ -148,4 +152,3 @@ if (window.matchMedia('(min-width: 1080px)').matches) {
 document.querySelector('.paintings-button').addEventListener('click', function () {
   window.location.href = 'pinturas.html';
 });
-

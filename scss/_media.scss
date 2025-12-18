@@ -20,6 +20,18 @@
         font-size: $font-size-p-s;
     }
 
+    // Navbar
+    .fixed-navbar-button {
+        width: 60px;
+        height: 60px;
+        top: 15px;
+        right: 15px;
+    }
+ 
+    .fixed-navbar-button i {
+        font-size: 20px;
+    }
+
     .block-1 {
 
         // For background animation
