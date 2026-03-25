@@ -1,0 +1,544 @@
+"<!DOCTYPE html>
+<html lang=\"es\">
+
+<head>
+    <meta charset=\"UTF-8\" />
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />
+    <title>MERCE YACANTE | Murales</title>
+    <meta name=\"keywords\" content=\"diseño, muralismo, ilustracion, website, pintura\">
+    <meta name=\"author\" content=\"Francisco Wortman\">
+    <meta name=\"description\" content=\"Artista plástica, muralista e ilustradora, viajando por el mundo.\">
+    <link rel=\"icon\" type=\"image/png\" href=\"assets/favicon-96x96.png\" sizes=\"96x96\" />
+    <link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/favicon.svg\" />
+    <link rel=\"shortcut icon\" href=\"assets/favicon.ico\" />
+    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"assets/apple-touch-icon.png\" />
+    <meta name=\"apple-mobile-web-app-title\" content=\"Merce Yacante Portfolio\" />
+    <link rel=\"manifest\" href=\"assets/site.webmanifest\" />
+    <meta name=\"instagram:site\" content=\"@merceyacante\">
+    <meta name=\"instagram:creator\" content=\"@merceyacante\">
+    <link rel=\"stylesheet\" href=\"css/styles.min.css\" />
+    <link rel=\"stylesheet\" href=\"css/locomotive-scroll.min.css\" />
+    <link rel=\"stylesheet\" href=\"https://kit-pro.fontawesome.com/releases/v7.0.0/css/pro.min.css\">
+</head>
+
+<body>
+    <!-- LOADER -->
+    <div class=\"c-loader is-loading\">
+        <div class=\"c-loader_bg\"></div>
+        <div class=\"c-loader_text\">
+            <h2 class=\"o-h2\">
+                <span class=\"c-l-up\">
+                    <img src=\"assets/home-logo.svg\" />
+                </span>
+            </h2>
+            <h4>
+                <span class=\"c-l-up\">
+                    <span>ARTISTA PLÁSTICA // Murales - Pinturas - Ilustración</span>
+                </span>
+            </h4>
+        </div>
+        <div class=\"c-loader_circle\"></div>
+    </div>
+
+    <!-- IMAGE VIEWER -->
+    <div id=\"image-viewer\">
+        <span class=\"close\">&times;</span>
+        <img class=\"modal-content\" id=\"full-image\">
+    </div>
+
+    <!-- NAVBAR -->
+    <a href=\"#\" class=\"fixed-navbar-button\" title=\"Home\">
+        <i class=\"fas fa-home\"></i>
+    </a>
+        
+    <!--Main-->
+    <div id=\"loco-scroll\" class=\"data-scroll-container\">
+
+        <section class=\"block-murals\" data-scroll-section>
+
+            <div class=\"reveal\" data-scroll data-scroll-repeat>
+                <main class=\"main\">
+                    <div class=\"primary-title\">
+                        <h1>MIS</h1>
+                        <h1 class=\"primary-title-violet\">MURALES</h1>
+                    </div>
+                        <div class=\"gallery\">
+
+                            <!-- First 6 images load immediately, rest use lazy loading -->
+                            
+                            <figure>
+                                <img src=\"assets/murales/1 (1).webp\" alt=\"Mural\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+                                       
+                            <figure>
+                                <img src=\"assets/murales/4.webp\" alt=\"Mural\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src=\"assets/murales/5.webp\" alt=\"Mural\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+                    
+                            <figure>
+                                <img src=\"assets/murales/6.webp\" alt=\"Mural\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+                    
+                            <figure>
+                                <img src=\"assets/murales/7.webp\" alt=\"Mural\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src=\"assets/murales/8.webp\" alt=\"Mural\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <!-- LAZY LOADED IMAGES - Use data-src instead of src -->
+                    
+                            <figure>
+                                <img data-src=\"assets/murales/10 (2).webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+                    
+                            <figure>
+                                <img data-src=\"assets/murales/10.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/11.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+                    
+                            <figure>
+                                <img data-src=\"assets/murales/13.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+                    
+                            <figure>
+                                <img data-src=\"assets/murales/14.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/15 (2).webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/16.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/17 (1).webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/17 (3).webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/17 (4).webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/17.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/18 (5).webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/18.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/19 (2).webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/19 (3).webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/19 (5).webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/19 (6).webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/19 (7).webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/19.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/20 (2).webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/20 (3).webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/20.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/21.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/23.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/24.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/25.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/26.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/27.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/31.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+                             
+                            <figure>
+                                <img data-src=\"assets/murales/32.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/33.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/38.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/40.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/41.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/42.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/43.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img data-src=\"assets/murales/44 (2).webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+                               
+                            <figure>
+                                <img data-src=\"assets/murales/44.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+                               
+                            <figure>
+                                <img data-src=\"assets/murales/45.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+                               
+                            <figure>
+                                <img data-src=\"assets/murales/46.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+                               
+                            <figure>
+                                <img data-src=\"assets/murales/47.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+                               
+                            <figure>
+                                <img data-src=\"assets/murales/48.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+                               
+                            <figure>
+                                <img data-src=\"assets/murales/49.webp\" alt=\"Mural\" class=\"lazy-loading\">
+                                <i class=\"fas fa-search-plus hover-icon\"></i>
+                                <figcaption>
+                                    <h3>MURAL</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </figcaption>
+                            </figure>
+
+                        </div>
+
+                    </main>
+            </div>
+
+        </section>
+        
+    </div>
+
+    <!-- jQuery -->
+    <script src=\"https://code.jquery.com/jquery-3.7.1.slim.min.js\" integrity=\"sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=\" crossorigin=\"anonymous\"></script>
+    
+    <!-- Locomotive Scroll -->
+    <script src=\"js/locomotive-scroll.min.js\"></script>
+    
+    <!-- Lazy Loading System - Load BEFORE main.js -->
+    <script src=\"js/lazy-load.js\"></script>
+    
+    <!-- Main JavaScript -->
+    <script src=\"js/main.js\"></script>
+    
+    <!-- Loader Script -->
+    <script>
+        const js_loader = document.querySelector(\".c-loader\");
+
+        window.onload = function () {
+            js_loader.classList.add(\"is-loaded\");
+            js_loader.classList.remove(\"is-loading\");
+        }
+    </script>
+</body>
+
+</html>
