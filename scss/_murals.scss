@@ -6,10 +6,7 @@
 .block-murals {
 
     .reveal {
-        &.is-inview {
-            opacity: 0;
-            animation: fade-in-right 2s ease forwards;
-        }
+
 
         .main {
             grid-column: main;
@@ -56,12 +53,24 @@
             height: 100%; // Use standard height for better compatibility
             object-fit: cover;
             grid-area: 1 / 1 / -1 / -1; // Covers the entire grid area
-            transition: transform 1s ease-in-out, opacity 1.2s ease; // Combined transitions for smoother effects
+            transition: transform 0.2s ease-out, opacity 0.2s ease; // OPTIMIZATION: Reduced time to 0.3s
+            will-change: transform, opacity; // Hint to browser for GPU acceleration
         }
 
         .gallery figure:hover img {
             transform: scale(1.125); // Use transform for better performance
             opacity: 0.5;
+        }
+
+        .gallery img.lazy-loading {
+            opacity: 0.3;
+            filter: blur(10px);
+        }
+
+        .gallery img.lazy-loaded {
+            opacity: 1;
+            filter: blur(0);
+            transition: opacity 0.5s ease,  filter 0.5s ease;
         }
 
         .gallery figcaption {
